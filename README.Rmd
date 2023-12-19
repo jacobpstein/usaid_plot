@@ -33,7 +33,7 @@ devtools::install_github("jacobpstein/usaid_plot")
 
 Let's 
 ```{r example}
-library(usaidplot)
+# library(usaidplot)
 ## basic example code
 ```
 
