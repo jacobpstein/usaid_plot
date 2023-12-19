@@ -1,7 +1,7 @@
 Package: usaidplot
 Title: Create USAID color palette-based figures in GGPlot2
 Version: 0.0.0.9000
-Authors@R: Jacob Patterson-Stein
+Author: Jacob Patterson-Stein
 Description: This package allows users to automatically apply USAID's color palette for either discrete or continuous variables.
 License: `use_mit_license()`
 Encoding: UTF-8
