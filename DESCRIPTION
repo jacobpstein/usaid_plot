@@ -1,0 +1,13 @@
+Package: usaidplot
+Title: Create USAID color palette-based figures in GGPlot2
+Version: 0.0.0.9000
+Authors@R: Jacob Patterson-Stein
+Description: This package allows users to automatically apply USAID's color palette for either discrete or continuous variables.
+License: `use_mit_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Import: 
+    ggplot2
+    , extrafont
+    , extrafontdb
