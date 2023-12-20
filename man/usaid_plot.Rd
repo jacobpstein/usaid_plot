@@ -17,7 +17,6 @@ Create plots with USAID's color palette
 }
 \examples{
 library(ggplot2)
-library(extrafont)
 ggplot(mtcars, aes(x = wt, y = mpg)) +
 geom_point(aes(fill = factor(gear)), shape = 21, stroke = 1, col = "white", size = 6) +
 usaid_plot()
