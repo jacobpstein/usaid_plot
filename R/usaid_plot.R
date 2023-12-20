@@ -1,6 +1,7 @@
 #' Create plots with USAID's color palette
 #'
 #' @param data_type A value to denote either "discrete" or "continuous" data are being graphed. "discrete" is the default.
+#' @param ppt A TRUE or FALSE option that changes the plot and facet background to match USAID's PowerPoint template colors.
 #' @return Returns a ggplot2 theme
 #'
 #' @import ggplot2
@@ -9,32 +10,43 @@
 #' @export
 #'
 #' @examples
+#'\dontrun{
 #' library(ggplot2)
 #' ggplot(mtcars, aes(x = wt, y = mpg)) +
 #' geom_point(aes(fill = factor(gear)), shape = 21, stroke = 1, col = "white", size = 6) +
-#' usaid_plot()
+#' usaid_plot(ppt=TRUE)
+#' }
 
-usaid_plot <- function(data_type = "discrete") {
-  scales <- list(
-    ggplot2::theme(
-      legend.position = "NA",
-      legend.background = ggplot2::element_blank(),
-      legend.title = ggplot2::element_blank(),
-      legend.key = ggplot2::element_blank(),
-      axis.ticks = ggplot2::element_blank(),
-      axis.line = ggplot2::element_blank(),
-      panel.grid.minor = ggplot2::element_blank(),
-      panel.grid.major.y = ggplot2::element_line(color = "#CFCDC9"),
-      panel.grid.major.x = ggplot2::element_line(color = "#CFCDC9"),
-      panel.background = ggplot2::element_blank(),
-      strip.background = ggplot2::element_rect(fill = "white"),
-      plot.title.position = "plot",
-      plot.title = element_text(size = 28, family = "Gill Sans", color = "black"),
-      plot.subtitle = element_text(size = 20, family = "Gill Sans", color = "black"),
-      plot.caption = element_text(size = 16, family = "Gill Sans", color = "black"),
-      text = element_text(size = 22, family = "Gill Sans", color = "black")
-    )
+usaid_plot <- function(data_type = "discrete", ppt = FALSE) {
+  is_mac <- tolower(Sys.info()[['sysname']]) == "darwin"
+
+  font_family <- if (is_mac) "Gill Sans" else "Gill Sans MT"
+
+  theme_settings <- ggplot2::theme(
+    legend.position = "NA",
+    legend.background = ggplot2::element_blank(),
+    legend.title = ggplot2::element_blank(),
+    legend.key = ggplot2::element_blank(),
+    axis.ticks = ggplot2::element_blank(),
+    axis.line = ggplot2::element_blank(),
+    panel.grid.minor = ggplot2::element_blank(),
+    panel.grid.major.y = ggplot2::element_line(color = "#CFCDC9"),
+    panel.grid.major.x = ggplot2::element_line(color = "#CFCDC9"),
+    panel.background = ggplot2::element_blank(),
+    strip.background = ggplot2::element_rect(fill = "white"),
+    plot.title.position = "plot",
+    plot.title = element_text(size = 28, family = font_family, color = "black"),
+    plot.subtitle = element_text(size = 20, family = font_family, color = "black"),
+    plot.caption = element_text(size = 16, family = font_family, color = "black"),
+    text = element_text(size = 22, family = font_family, color = "black")
   )
+
+  if (ppt) {
+    theme_settings$plot.background <- ggplot2::element_rect(fill = '#E7E7E5', colour = '#E7E7E5')
+    theme_settings$strip.background <- ggplot2::element_rect(fill = "#E7E7E5")
+  }
+
+  scales <- list(theme = theme_settings)
 
   if (data_type == "discrete") {
     scales <- c(
