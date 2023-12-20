@@ -72,3 +72,12 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 ```
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+
+## Quiet font switching
+
+USAID’s branding standards suggest Gill Sans MT as the default font for
+all publications. However, Mac users will find that Gill Sans MT is a
+Windows font, whereas the Mac equivalent is Gill Sans. This package
+quietly runs a `Sys.info()` function to determine what operating system
+the user has and then changes the font accordingly to avoid generating
+errors and to ease switching from one matchine to another.
