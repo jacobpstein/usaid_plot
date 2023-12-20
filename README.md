@@ -6,7 +6,11 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of usaidplot is to …
+The goal of usaidplot is to apply USAID’s color palette to ggplot2
+graphs. This package is based on the [USAID graphic standards
+manual](https://www.usaid.gov/sites/default/files/2022-05/USAID_GSM-02_04_2020.pdf)
+and inspired by the BBC’s plotting package,
+[bbplot](https://github.com/bbc/bbplot).
 
 ## Installation
 
@@ -17,35 +21,35 @@ You can install the development version of usaidplot like so:
 devtools::install_github("jacobpstein/usaid_plot")
 ```
 
-## Example
+## Example Usage
 
-Let’s
+One neat thing about this package is that you can apply the USAID color
+palette to either discrete or continuous data without much effort.
 
-``` r
-# library(usaidplot)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+Let’s look at a continuous example first using R’s mtcars data. We
+specify `data_type="continous"` to apply USAID’s color palette to
+continuous data.
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+library(usaidplot)
+library(ggplot2)
+
+ggplot(mtcars, aes(x = wt, y = mpg)) + 
+  geom_point(aes(fill = gear), shape = 21, stroke = 1, col = "white", size = 6) + 
+  usaid_plot(data_type = "continuous")
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
+<img src="man/figures/README-example-1.png" width="100%" />
 
-You can also embed plots, for example:
+Now, let’s make the same plot, but apply discrete colors using
+`data_type="discrete"`, which is also the default.
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+``` r
 
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+# we'll make gear a factor to change it from continous to discrete
+ggplot(mtcars, aes(x = wt, y = mpg)) + 
+  geom_point(aes(fill = factor(gear)), shape = 21, stroke = 1, col = "white", size = 6) + 
+  usaid_plot(data_type = "discrete") # you can also just leave this blank
+```
+
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
