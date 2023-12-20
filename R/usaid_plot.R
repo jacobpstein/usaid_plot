@@ -1,12 +1,12 @@
-#' Title
+#' Create plots with USAID's color palette
+#'
 #' @import ggplot2
 #' @import extrafont
 #' @import extrafontdb
-#' @param data_type
+#'
+#' @param data_type A value to denote either "discrete" or "continuous" data are being graphed. "discrete" is the default.
 #'
 #' @return Returns a ggplot2 theme
-#' @export
-#'
 #' @examples
 #' library(ggplot2)
 #' ggplot(mtcars, aes(x = wt, y = mpg)) +
