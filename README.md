@@ -63,7 +63,7 @@ USAID’s PowerPoint presentation
 background. In some cases, users may want to avoid the white-grey
 contrast when they import figures into this template. Using the
 `ppt=TRUE` option changes the background for all figures to match the
-USAID slide template. The fault is `ppt=FALSE`.
+USAID slide template. The default is `ppt=FALSE`.
 
 ``` r
 ggplot(mtcars, aes(x = wt, y = mpg)) + 

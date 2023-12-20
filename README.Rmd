@@ -57,7 +57,7 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 
 ## Changing the background for presentations
 
-USAID's PowerPoint presentation [template](https://www.usaid.gov/branding/resources) has a grey background. In some cases, users may want to avoid the white-grey contrast when they import figures into this template. Using the `ppt=TRUE` option changes the background for all figures to match the USAID slide template. The fault is `ppt=FALSE`.
+USAID's PowerPoint presentation [template](https://www.usaid.gov/branding/resources) has a grey background. In some cases, users may want to avoid the white-grey contrast when they import figures into this template. Using the `ppt=TRUE` option changes the background for all figures to match the USAID slide template. The default is `ppt=FALSE`.
 
 ```{r}
 ggplot(mtcars, aes(x = wt, y = mpg)) + 
