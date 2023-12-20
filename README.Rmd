@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of usaidplot is to apply USAID's color palette to ggplot2 graphs. This package is based on the [USAID graphic standards manual](https://www.usaid.gov/sites/default/files/2022-05/USAID_GSM-02_04_2020.pdf) and inspired by the BBC's plotting package, [bbplot](https://github.com/bbc/bbplot). Special thanks to [sheitin](https://github.com/sheitin) for helping get this thing off of my computer and into the world.
+The goal of usaidplot is to apply USAID's color palette to ggplot2 graphs. This package is based on the [USAID graphic standards manual](https://www.usaid.gov/sites/default/files/2022-05/USAID_GSM-02_04_2020.pdf) and inspired by the BBC's plotting package, [bbplot](https://github.com/bbc/bbplot). Special thanks to  [sheitin](https://github.com/sheitin) for helping get this thing off of my computer and into the world.
 
 ## Installation
 
