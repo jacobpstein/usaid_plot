@@ -1,0 +1,6 @@
+bibentry(
+  bibtype  = "Package",
+  title    = "usaidplot, an R package for plotting figures with the USAID color palette",
+  author   = "Jacob Patterson-Stein",
+  year     = 2017,
+)
