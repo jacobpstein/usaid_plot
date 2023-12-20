@@ -55,3 +55,20 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 ```
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+
+## Changing the background for presentations
+
+USAID’s PowerPoint presentation
+[template](https://www.usaid.gov/branding/resources) has a grey
+background. In some cases, users may want to avoid the white-grey
+contrast when they import figures into this template. Using the
+`ppt=TRUE` option changes the background for all figures to match the
+USAID slide template. The fault is `ppt=FALSE`.
+
+``` r
+ggplot(mtcars, aes(x = wt, y = mpg)) + 
+  geom_point(aes(fill = gear), shape = 21, stroke = 1, col = "white", size = 6) + 
+  usaid_plot(data_type = "continuous", ppt = TRUE)
+```
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />

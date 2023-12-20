@@ -44,6 +44,7 @@ usaid_plot <- function(data_type = "discrete", ppt = FALSE) {
   if (ppt) {
     theme_settings$plot.background <- ggplot2::element_rect(fill = '#E7E7E5', colour = '#E7E7E5')
     theme_settings$strip.background <- ggplot2::element_rect(fill = "#E7E7E5")
+    theme_settings$legend.key = element_rect(fill = "#E7E7E5")
   }
 
   scales <- list(theme = theme_settings)
