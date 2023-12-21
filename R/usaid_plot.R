@@ -18,9 +18,9 @@
 #' }
 
 usaid_plot <- function(data_type = "discrete", ppt = FALSE) {
-  is_mac <- tolower(Sys.info()[['sysname']]) == "darwin"
+  is_windows <- tolower(Sys.info()[['sysname']]) == "windows"
 
-  font_family <- if (is_mac) "Gill Sans" else "Gill Sans MT"
+  font_family <- if (is_windows) "Gill Sans MT" else "Gill Sans"
 
   theme_settings <- ggplot2::theme(
     legend.position = "NA",
