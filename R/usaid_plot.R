@@ -20,7 +20,7 @@
 usaid_plot <- function(data_type = "discrete", ppt = FALSE) {
   is_windows <- tolower(Sys.info()[['sysname']]) == "windows"
 
-  font_family <- if (is_windows) "Gill Sans MT" else "Gill Sans"
+  font_family <- ifelse(is_windows==T, "Gill Sans MT", "Gill Sans")
 
   theme_settings <- ggplot2::theme(
     legend.position = "NA",
