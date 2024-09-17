@@ -23,6 +23,11 @@ You can install the development version of usaidplot like so:
 devtools::install_github("jacobpstein/usaid_plot")
 ```
 
+Or the CRAN version using:
+```r
+install.packages(usaid_plot)
+```
+
 ## Example Usage
 
 One neat thing about this package is that you can apply the USAID color
