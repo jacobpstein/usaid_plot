@@ -17,3 +17,7 @@ Imports:
     extrafont, 
     extrafontdb,
     ggplot2
+Depends: 
+    extrafont, 
+    extrafontdb,
+    ggplot2
