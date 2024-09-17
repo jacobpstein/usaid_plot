@@ -20,3 +20,5 @@ Imports:
     extrafont, 
     extrafontdb,
     ggplot2
+URL: https://github.com/jacobpstein/usaid_plot
+BugReports: https://github.com/jacobpstein/usaid_plot/issues
