@@ -1,6 +1,6 @@
 Package: usaidplot
 Title: Create USAID Color Palette-Based Figures in GGPlot2
-Version: 1.0.0
+Version: 1.0.0.9000
 Authors@R: person("Jacob", "Patterson-Stein", email = "jacobpstein@gmail.com",
   role = c("aut", "cre"))
 Maintainer: Jacob Patterson-Stein <jacobpstein@gmail.com>
