@@ -1,5 +1,5 @@
 Package: usaidplot
-Title: Create USAID color palette-based figures in GGPlot2
+Title: Create USAID Color Palette-Based Figures in GGPlot2
 Version: 0.0.0.9000
 Authors@R: person("Jacob", "Patterson-Stein", email = "jacobpstein@gmail.com",
   role = c("aut", "cre"))
@@ -16,9 +16,5 @@ RoxygenNote: 7.2.3
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-Imports: 
-    extrafont, 
-    extrafontdb,
-    ggplot2
 URL: https://github.com/jacobpstein/usaid_plot
 BugReports: https://github.com/jacobpstein/usaid_plot/issues
