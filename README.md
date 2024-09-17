@@ -20,12 +20,12 @@ You can install the development version of usaidplot like so:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("jacobpstein/usaid_plot")
+devtools::install_github("jacobpstein/usaidplot")
 ```
 
 Or the CRAN version using:
 ```r
-install.packages(usaid_plot)
+install.packages(usaidplot)
 ```
 
 ## Example Usage
