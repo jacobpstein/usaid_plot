@@ -1,10 +1,10 @@
 Package: usaidplot
-Title: Create USAID Color Palette-Based Figures in GGPlot2
+Title: Create Figures in GGPlot2 Using the United States Agency for International Development Color Palette 
 Version: 1.0.0.9000
 Authors@R: person("Jacob", "Patterson-Stein", email = "jacobpstein@gmail.com",
   role = c("aut", "cre"))
 Maintainer: Jacob Patterson-Stein <jacobpstein@gmail.com>
-Description: This package allows users to automatically apply USAID's color palette for either discrete or continuous variables.
+Description: Automatically apply the United States Agency for International Development's color palette and fonts for either discrete or continuous variables.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Depends: R (>= 2.10),
