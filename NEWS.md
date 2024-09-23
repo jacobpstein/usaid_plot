@@ -1,3 +1,4 @@
 # usaidplot (development version)
 
-* Initial CRAN submission.
+* We submitted this thing to CRAN!
+
