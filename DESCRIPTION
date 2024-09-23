@@ -1,5 +1,5 @@
 Package: usaidplot
-Title: Create Figures in GGPlot2 Using the United States Agency for International Development Color Palette 
+Title: Create Figures Using the United States Agency for International Development Color Palette 
 Version: 2.0.0.9000
 Authors@R: person("Jacob", "Patterson-Stein", email = "jacobpstein@gmail.com",
   role = c("aut", "cre"))
