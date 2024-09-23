@@ -1,3 +1,3 @@
 # usaidplot (development version)
 
-* Initial CRAN submission.
+* Initial CRAN submission. Updated after initial checks.
