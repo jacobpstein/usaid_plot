@@ -13,4 +13,4 @@
 
 # usaidplot 2.0.2
 
-* Trouble shooting issues and fixing version numbering
+* Patch fix
