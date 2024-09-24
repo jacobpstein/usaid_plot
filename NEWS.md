@@ -5,3 +5,8 @@
 # usaidplot 2.0.0.9000
 
 * Minor fixes for CRAN
+
+
+# usaidplot 2.0.1
+
+* Trouble shooting issues and fixing version numbering
