@@ -1,4 +1,4 @@
-# usaidplot (development version)
+# usaidplot 2.0.2
 
 * We submitted this thing to CRAN!
 
@@ -8,5 +8,9 @@
 
 
 # usaidplot 2.0.1
+
+* Trouble shooting issues and fixing version numbering
+
+# usaidplot 2.0.2
 
 * Trouble shooting issues and fixing version numbering

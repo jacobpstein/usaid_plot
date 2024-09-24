@@ -1,6 +1,6 @@
 Package: usaidplot
 Title: Create Figures Using the United States Agency for International Development Color Palette 
-Version: 2.0.1
+Version: 2.0.2
 Authors@R: person("Jacob", "Patterson-Stein", email = "jacobpstein@gmail.com",
   role = c("aut", "cre"))
 Maintainer: Jacob Patterson-Stein <jacobpstein@gmail.com>
