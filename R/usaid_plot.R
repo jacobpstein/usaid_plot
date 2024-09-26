@@ -1,4 +1,4 @@
-#' Create plots with USAID's color palette
+#' Create plots with the United States Agency for International Development's color palette
 #'
 #' @param data_type A value to denote either "discrete" or "continuous" data are being graphed. "discrete" is the default.
 #' @param ppt A TRUE or FALSE option that changes the plot and facet background to match USAID's PowerPoint template colors.
@@ -10,7 +10,7 @@
 #' @export
 #'
 #' @examples
-#'\dontrun{
+#'\donttest{
 #' library(ggplot2)
 #' ggplot(mtcars, aes(x = wt, y = mpg)) +
 #' geom_point(aes(fill = factor(gear)), shape = 21, stroke = 1, col = "white", size = 6) +

@@ -1,5 +1,5 @@
 Package: usaidplot
-Title: Create Figures Using the United States Agency for International Development Color Palette 
+Title: Make Graphs with US Agency for International Development Colors 
 Version: 2.0.2
 Authors@R: person("Jacob", "Patterson-Stein", email = "jacobpstein@gmail.com",
   role = c("aut", "cre"))
