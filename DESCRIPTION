@@ -1,7 +1,8 @@
 Package: usaidplot
 Title: Make Graphs with US Agency for International Development Colors 
 Version: 2.0.2
-Authors@R: person("Jacob", "Patterson-Stein", email = "jacobpstein@gmail.com",
+Authors@R: 
+    person("Jacob", "Patterson-Stein", email = "jacobpstein@gmail.com",
   role = c("aut", "cre"))
 Maintainer: Jacob Patterson-Stein <jacobpstein@gmail.com>
 Description: Automatically apply the United States Agency for International Development's color palette and fonts for either discrete or continuous variables.
