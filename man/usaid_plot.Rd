@@ -18,7 +18,7 @@ Returns a ggplot2 theme
 Create plots with USAID's color palette
 }
 \examples{
-\dontrun{
+\donttest{
 library(ggplot2)
 ggplot(mtcars, aes(x = wt, y = mpg)) +
 geom_point(aes(fill = factor(gear)), shape = 21, stroke = 1, col = "white", size = 6) +
