@@ -2,7 +2,7 @@
 % Please edit documentation in R/usaid_plot.R
 \name{usaid_plot}
 \alias{usaid_plot}
-\title{Create plots with USAID's color palette}
+\title{Create plots with the United States Agency for International Development's color palette}
 \usage{
 usaid_plot(data_type = "discrete", ppt = FALSE)
 }
@@ -15,13 +15,12 @@ usaid_plot(data_type = "discrete", ppt = FALSE)
 Returns a ggplot2 theme
 }
 \description{
-Create plots with USAID's color palette
+Create plots with the United States Agency for International Development's color palette
 }
 \examples{
-\donttest{
-library(ggplot2)
-ggplot(mtcars, aes(x = wt, y = mpg)) +
+p <- ggplot(mtcars, aes(x = wt, y = mpg)) +
 geom_point(aes(fill = factor(gear)), shape = 21, stroke = 1, col = "white", size = 6) +
-usaid_plot(ppt=TRUE)
+usaid_plot()
+
 }
-}
+\keyword{usaid_plot}

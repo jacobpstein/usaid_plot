@@ -13,7 +13,7 @@ Depends: R (>= 2.10),
     extrafontdb,
     ggplot2
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

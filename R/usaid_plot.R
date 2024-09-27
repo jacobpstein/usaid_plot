@@ -7,15 +7,14 @@
 #' @import ggplot2
 #' @import extrafont
 #' @import extrafontdb
+#' @keywords usaid_plot
 #' @export
-#'
 #' @examples
-#'\donttest{
-#' library(ggplot2)
-#' ggplot(mtcars, aes(x = wt, y = mpg)) +
+#' p <- ggplot(mtcars, aes(x = wt, y = mpg)) +
 #' geom_point(aes(fill = factor(gear)), shape = 21, stroke = 1, col = "white", size = 6) +
-#' usaid_plot(ppt=TRUE)
-#' }
+#' usaid_plot()
+#'
+
 
 usaid_plot <- function(data_type = "discrete", ppt = FALSE) {
   is_windows <- tolower(Sys.info()[['sysname']]) == "windows"
