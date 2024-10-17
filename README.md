@@ -20,12 +20,7 @@ You can install the development version of usaidplot like so:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("jacobpstein/usaidplot")
-```
-
-Or the CRAN version using:
-```r
-install.packages(usaidplot)
+devtools::install_github("jacobpstein/usaid_plot")
 ```
 
 ## Example Usage
@@ -80,8 +75,8 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 
 ## Quiet font switching
 
-USAID’s branding standards suggest Gill Sans as the default font for
-all publications. However, users will find that Gill Sans MT is a
+USAID’s branding standards suggest Gill Sans MT as the default font for
+all publications. However, Mac users will find that Gill Sans MT is a
 Windows font, whereas the Mac equivalent is Gill Sans. This package
 quietly runs a `Sys.info()` function to determine what operating system
 the user has and then changes the font accordingly to avoid generating
