@@ -1,6 +1,6 @@
 Package: usaidplot
 Title: Make Graphs with US Agency for International Development Colors 
-Version: 2.0.2
+Version: 2.0.2.9000
 Authors@R: 
     person("Jacob", "Patterson-Stein", email = "jacobpstein@gmail.com",
   role = c("aut", "cre"))
