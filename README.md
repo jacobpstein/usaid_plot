@@ -4,6 +4,9 @@
 # usaidplot
 
 <!-- badges: start -->
+
+[![CRAN
+status](https://www.r-pkg.org/badges/version/usaidplot)](https://CRAN.R-project.org/package=usaidplot)
 <!-- badges: end -->
 
 The goal of usaidplot is to apply USAID’s color palette to ggplot2
